@@ -13,6 +13,10 @@
 		B5C19E85280B1B7C0095F141 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C19E83280B1B7C0095F141 /* Main.storyboard */; };
 		B5C19E87280B1B7E0095F141 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5C19E86280B1B7E0095F141 /* Assets.xcassets */; };
 		B5C19E8A280B1B7E0095F141 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C19E88280B1B7E0095F141 /* LaunchScreen.storyboard */; };
+		B5C19E92280B6AAE0095F141 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C19E91280B6AAE0095F141 /* QuizViewController.swift */; };
+		B5C19E94280B6BB50095F141 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C19E93280B6BB50095F141 /* ResultViewController.swift */; };
+		B5C19E96280B7BE80095F141 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C19E95280B7BE80095F141 /* Quiz.swift */; };
+		B5C19E98280B7C130095F141 /* QuizManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C19E97280B7C130095F141 /* QuizManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		B5C19E86280B1B7E0095F141 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5C19E89280B1B7E0095F141 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5C19E8B280B1B7E0095F141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5C19E91280B6AAE0095F141 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		B5C19E93280B6BB50095F141 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		B5C19E95280B7BE80095F141 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
+		B5C19E97280B7C130095F141 /* QuizManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +68,13 @@
 				B5C19E7F280B1B7C0095F141 /* SceneDelegate.swift */,
 				B5C19E81280B1B7C0095F141 /* ViewController.swift */,
 				B5C19E83280B1B7C0095F141 /* Main.storyboard */,
+				B5C19E91280B6AAE0095F141 /* QuizViewController.swift */,
+				B5C19E93280B6BB50095F141 /* ResultViewController.swift */,
 				B5C19E86280B1B7E0095F141 /* Assets.xcassets */,
 				B5C19E88280B1B7E0095F141 /* LaunchScreen.storyboard */,
 				B5C19E8B280B1B7E0095F141 /* Info.plist */,
+				B5C19E95280B7BE80095F141 /* Quiz.swift */,
+				B5C19E97280B7C130095F141 /* QuizManager.swift */,
 			);
 			path = "POO - SwiftQuiz";
 			sourceTree = "<group>";
@@ -138,9 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5C19E94280B6BB50095F141 /* ResultViewController.swift in Sources */,
 				B5C19E82280B1B7C0095F141 /* ViewController.swift in Sources */,
+				B5C19E96280B7BE80095F141 /* Quiz.swift in Sources */,
+				B5C19E98280B7C130095F141 /* QuizManager.swift in Sources */,
 				B5C19E7E280B1B7C0095F141 /* AppDelegate.swift in Sources */,
 				B5C19E80280B1B7C0095F141 /* SceneDelegate.swift in Sources */,
+				B5C19E92280B6AAE0095F141 /* QuizViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +301,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -292,6 +309,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -303,7 +321,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,6 +330,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -319,6 +338,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -330,7 +350,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
